@@ -2,12 +2,14 @@ package com.reddragon.springframework.didemo.controllers;
 
 import com.reddragon.springframework.didemo.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class PropertyInjectedController {
 
     @Autowired
+    @Qualifier("constructorGreetingService")
     GreetingService greetingService;
 
     public String sayHello(){
