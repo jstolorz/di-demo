@@ -1,4 +1,4 @@
-package com.reddragon.springframework.didemo.controller;
+package com.reddragon.springframework.didemo.controllers;
 
 import org.springframework.stereotype.Controller;
 
